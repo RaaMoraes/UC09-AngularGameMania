@@ -1,0 +1,89 @@
+<div class="rodape ccc">
+    <div class="container5 grid rodape2">
+        <!--container do rodape-->
+        <div class="esquerdarodape df">
+            <!-- container da esquerda do rodape-->
+            <div class="esquerdarodape-txt -df">
+                <p class="rodape-titulo">Lorem ipsum dolor</p>
+                <img class="todas_as_linhas" src="../../assets/img/section 5/todas as  linhas.png" alt="">
+                <p class="rodape-links">Lorem ipsum</p>
+                <p class="rodape-link">Lorem ipsum</p>
+                <p class="rodape-link">Lorem ipsum</p>
+                <p class="rodape-link">Lorem ipsum</p>
+            </div>
+            <div class="esquerdarodape-txt -df">
+                <p class="rodape-titulo">Lorem ipsum dolor</p>
+                <img class="todas_as_linhas" src="../../assets/img/section 5/todas as  linhas.png" alt="">
+                <p class="rodape-links">Lorem ipsum</p>
+                <p class="rodape-link">Lorem ipsum</p>
+                <p class="rodape-link">Lorem ipsum</p>
+                <p class="rodape-link">Lorem ipsum</p>
+            </div>
+            <div class="esquerdarodape-txt -df">
+                <p class="rodape-titulo">Lorem ipsum dolor</p>
+                <img class="todas_as_linhas" src="../../assets/img/section 5/todas as  linhas.png" alt="">
+                <p class="rodape-links">Lorem ipsum</p>
+                <p class="rodape-link">Lorem ipsum</p>
+                <p class="rodape-link">Lorem ipsum</p>
+                <p class="rodape-link">Lorem ipsum</p>
+            </div>
+            <div class="esquerdarodape-txt -df">
+                <p class="rodape-titulo">Lorem ipsum dolor</p>
+                <img class="todas_as_linhas" src="../../assets/img/section 5/todas as  linhas.png" alt="">
+                <p class="rodape-links">Lorem ipsum</p>
+                <p class="rodape-link">Lorem ipsum</p>
+                <p class="rodape-link">Lorem ipsum</p>
+                <p class="rodape-link">Lorem ipsum</p>
+            </div>
+        </div>
+        <div class="colunadivisora">
+            <img src="../../assets/img/section 5/coluna divisora.png" alt="">
+        </div>
+        <div class="direitarodape ">
+            <!--container da direita do rodape-->
+            <div class="newsletter -ccc" id = "element">
+                <div class="titulonewsletter ccc" id = "element2">
+                    <!-- superior-->
+                    <p id="newsletter">Newsletter</p>
+                    <img src="../../assets/img/section 5/vertical.png" alt="">
+                    <p>Receba ofertas exclusivas no seu e-mail!</p>
+                </div>
+                <form #userForm="ngForm" (ngSubmit)="onSubmit()" class="newsletterinput ccc">
+                    <input type="email" placeholder="digite seu e-mail!" id="newsletterinput" name = "email" [(ngModel)] ="userModel.email" required>
+                    <p *ngIf="userModel.email != ''" id = "email5">Existe email</p>
+                    <button type ="submit" id="botao_cadastrar">Cadastrar</button>
+                </form>
+                <div class="sac-redes sec">
+                    <!-- inferior-->
+                    <div class="sac">
+                        <!--esquerda-->
+                        <div class="fsc">
+                            <p class="sacgg">Sac</p>
+                            <img src="../../assets/img/section 5/vertical.png" alt="">
+                            <p class="sac1">StoreSac@email.com</p>
+                        </div>
+                        <div class="fsc">
+                            <p class="sacgg">Telefone</p>
+                            <img src="../../assets/img/section 5/vertical.png" alt="">
+                            <p class="sac1">(12)3456-7890</p>
+                        </div>
+                        <div class="fsc">
+                            <p class="sacgg">E-mail</p>
+                            <img src="../../assets/img/section 5/vertical.png" alt="">
+                            <p class="sac1">Store@email.com</p>
+                        </div>
+                    </div>
+                    <div class="redes">
+                        <!-- direita-->
+                        <p>Siga nossas redes sociais!</p>
+                        <div class="redessociais sbc">
+                            <a href="#"><img src="../../assets/img/section 5/insta.png" alt=""></a>
+                            <a href="#"><img src="../../assets/img/section 5/facebook.png" alt=""></a>
+                            <a href="#"><img src="../../assets/img/section 5/youtube.png" alt=""></a>
+                            <a href="#"><img src="../../assets/img/section 5/twitter.png" alt=""></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+</div>

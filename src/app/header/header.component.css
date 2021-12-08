@@ -1,0 +1,838 @@
+/*importa uma font pelo google fonts por um link*/
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap'); 
+      
+/* "*" é usado para editar todos os elementos presentes no html  */
+/* o CSS já vem com algumas predefinições de margin padding e o comportamento das box criadas*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* Edita todos os elementos visiveis do site e seta um padrao que pode ser sobreescrito por qualquer comando identico dentro do body}*/
+
+
+
+
+h1{
+    font-size: 35px;
+    text-transform: uppercase;
+}
+.grid{
+    max-width: 1200px;
+    width: 90%;
+    margin:0 auto;
+}
+
+/*----------------------------------comandos-----------------------*/
+
+.b{
+    background-color: #121212;
+}
+
+.w{
+    background-color: #F5F0F5;
+}
+
+.bl{
+    background-color: #0D25BD;
+}
+
+.df{
+    display: flex;
+}
+.-df{
+    display: flex;
+    flex-direction: column;
+}
+
+.sbc{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.-sbc{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+.sec{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.-sec{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.fec{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+.-fec{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+}
+.fsc{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+.-fsc{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+.c{
+    display: flex;
+    justify-content: center;
+}
+.cc{
+    display: flex;
+    align-items: center;
+}
+
+.ccc{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.-ccc{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.alin{
+    padding-left: 5px;
+}
+
+/*----------------------------------Header-----------------------*/
+
+.header{
+    background-color: #121212;
+}
+
+#barra_pesquisa{
+    background-color: #F5F0F5;
+    border-radius: 15px;
+    
+    width: 45%;
+    min-width: 150px;
+    height: 40px;
+    margin-right: 5px;
+    margin-left: 5px;
+}
+
+#txtbarra{
+    width: 90%;
+    text-shadow: none;
+    
+    outline: none;
+    border: none;
+    background:none;
+    font-family: "Open Sans";
+    font-size: 16px;
+    padding-left: 15px;
+    font-weight: normal;
+}
+
+.dep{
+    height: 30px;
+    background-color: #0D25BD;
+    text-transform: uppercase;
+    }
+
+#txtdep{
+    font-size: 17px;
+    color: #f5F0F5;
+    text-decoration: none;
+}
+.depa{
+    text-decoration: none;
+}
+
+/*----------------------------------Banner-----------------------*/
+
+.bannerbg{
+    height: 450px;
+    width: 100%;
+    background-image: url(../../assets/img/banner.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+}
+
+.banner-txt1{
+    margin-top: 10px;
+    width: 350px;
+    font-size: 30px;
+    text-align: center;
+}
+
+.banner-txt2{
+    margin-top: 10px;
+    width: 350px;
+    font-size: 30px;
+    text-align: center;
+}
+
+.alin2{
+    margin-left: 900px;
+}
+
+.alin3{
+    margin-left: 925px;
+}
+
+.confira{
+    width: 300px;
+    margin-top: 20px;
+}
+
+/*----------------------------------MAIS VENDIDOS-----------------------*/
+
+.mais_vendidos{
+    height: 550px;
+    background-color: #F5F0F5;
+}
+
+.titulo{
+    height: 50px;
+    background-color: #0D25BD;
+}
+.carrossel{
+    margin-top: 45px;
+    overflow: hidden;
+    height: 360px;
+    width: 1090px;
+    background-color: #F5F0F5;
+    
+}
+.produtos1{
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+    transform: translateX(0)
+    
+}
+
+.imagem{
+    border-radius: 10px;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+
+
+.setaesquerda{
+   height: 50px;
+   width: 50px;
+   margin-right: 10px;
+   background-image: url(../../assets/img/section1/seta1.png);
+   background-size: contain;
+   background-repeat: no-repeat;
+   cursor: pointer;
+ }
+ .setadireita{
+    height: 50px;
+    width: 50px;
+    margin-left: 10px;
+    background-image: url(../../assets/img/section1/seta.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    cursor: pointer;
+ }
+ 
+.todas_ofertas{
+    font-size: 20px;
+    font-weight: bolder;
+    text-transform: uppercase;
+    padding-top: 20px;
+    padding-right: 50px;
+    text-shadow: none;
+}
+
+/*----------------------------------Pc Gamer-----------------------*/
+
+.pc_gamer{
+    height: 550px;
+    background-color: #F5F0F5;
+}
+
+.sel{
+    margin-top: 20px;
+    margin-left: 60px;
+
+}
+
+.sel-txt{
+    color: #121212;
+    text-shadow: none;
+    text-transform: uppercase;
+    font-weight: bolder;
+    font-size: 20px;
+}
+
+.sel1{
+    height: 35px;
+    width: 250px;
+    background-color: #121212;
+    border-radius: 5px;
+    padding: 5px;
+    margin-left: 15px;
+}
+
+.produtos2{
+    margin-top: 20px;
+}
+
+.monte_seu_pc{
+    font-size: 20px;
+    font-weight: bolder;
+    text-transform: uppercase;
+    padding-top: 0px;
+    padding-right: 50px;
+    text-shadow: none;
+}
+
+/*----------------------------------Banners-----------------------*/
+
+.banners{
+    height: 300;
+    background-color: #F5F0F5;
+    padding-bottom: 40px;
+    padding-top: 20px;
+}
+
+#red{
+    height: 242px;
+    width: 483px;
+    border-radius: 10px;
+}
+
+/*----------------------------------jogos-----------------------*/
+.jogos{
+    height: 1000px;
+    background-color: #F5F0F5;
+}
+
+
+.titulo2{
+    height: 95px;
+    background-color: #0D25BD;
+}
+
+.gen{
+    background-color: #121212;
+    color: white;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-radius: 5px;
+    margin-left: 20px;
+    margin-top: 15px;
+    font-size: 27px;
+    
+}
+
+.generos1 :hover{
+    color: #7e7e7e
+}
+
+.generos1 a {
+    text-decoration: none;
+}
+
+.linha1{
+    margin-top: 15px;
+}
+
+.carrossel2{
+    display: flex;
+    height: 332;
+    width: 1036px;
+    overflow: hidden;
+    margin-top: 10px;
+}
+.imagem3{
+    padding-left: 5px;
+    padding-right: 5px;
+}
+.imagem4{
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+.ainda{
+  color: black;
+  margin-top: 10px;
+  font-weight: bolder;
+  text-shadow: none;
+}
+
+.clique{
+    color: white;
+    padding: 5px;
+    border-radius: 5px;
+    
+    text-transform: uppercase;
+    margin-left: 10px;
+}
+
+.ainda a {
+    text-decoration: none;
+}
+
+/*----------------------------------rodapeEsquerda-----------------------*/
+.todas_as_linhas{width: 130px;}
+.rodape{
+    background: linear-gradient(1.07deg, #0065C2 3.33%, #00C1F7 99.2%);
+}
+.container5{
+
+}
+
+.esquerdarodape-txt{
+    margin-left: 10px;
+    margin-top: 10px;
+
+    width: 189px;
+}
+
+.rodape-titulo{
+font-size: 18px;
+font-weight: bolder;
+padding-bottom: 5px;
+}
+
+.rodape-links{
+    padding-top: 5px;
+}
+
+.colunadivisora{
+    padding-top: 10px;
+}
+
+/*----------------------------------rodapeDireita-----------------------*/
+
+.direitarodape{
+    width: 398px;
+    height: 200px;
+    margin-top: 10px;
+}
+
+.titulonewsletter p {
+    padding-right: 5px;
+    font-size: 13px;
+    margin-bottom: 5px;
+}
+#newsletter{
+    font-size: 18px;
+}
+.titulonewsletter img {
+    padding-right: 5px;
+}
+.newsletterinput {
+    border-radius: 5px;
+background-color: #F5F0F5;
+width: 95%;
+margin-left: 5px;
+}
+
+#newsletterinput{
+    width: 90%;
+    border: none;
+    outline: none;
+    background: none;
+    padding-left: 5px;
+}
+
+#botao_cadastrar{
+   margin-right: 2px;
+    border-radius: 5px;
+    cursor: pointer;
+    height: 85%;
+    width: 25%;
+    background-color: #0065C2;
+    font-size: 16px;
+    color: #F5F0F5;
+    font-family: "Open Sans";
+    border: none;
+}
+.sac{
+    margin-left: 5px;
+}
+
+.sac-redes{
+    height: 90px;
+    width: 398px;
+}
+
+.sac1 p {
+    padding-right: 5px;
+    font-size: 13px;
+    
+}
+.sacgg{
+    font-size: 18px;
+}
+
+.fsc p {
+    padding-right: 5px;
+    padding-left: 5px;
+}
+
+.redes{
+    text-transform: uppercase;
+    font-size: 12px;
+}
+
+.redessociais{
+    padding-right: 5px;
+    padding-top: 5px;
+}
+
+.rodape2{display: flex;}
+
+.alinhamento6{
+    display: flex;
+    
+}
+
+/*----------------------------------ajustes responsividade-----------------------*/
+@media screen and (max-width: 1350px){
+    .grid{
+      max-width: 1000px
+    }
+    .bannerbg{
+        
+     height: 350px;
+    }
+  
+    .banner-txt1{
+        font-size: 20px;
+    }
+    .banner-txt2{
+        font-size: 20px;
+    }
+    
+    .confira{
+        height: 100px;
+        width: 250px;
+    }
+    .alin2{
+        margin-left: 750px;
+    }
+    .alin3{
+        margin-left: 820px;
+    }
+    /*carrossel*/
+    #red{
+        height: 220px;
+        width: 440px;
+        border-radius: 10px;
+    }
+    .carrossel2{
+        width: 780px;
+         }
+/*rodape*/
+/*Esquerda*/
+
+    .todas_as_linhas{width: 130px;}
+    
+    .esquerdarodape-txt{
+      width: 158px;
+    }
+
+    .rodape-titulo{
+        font-size: 16px;
+    }
+    
+    .direitarodape{
+        width: 333px;
+        height: 200px;
+        margin-top: 10px;
+    }
+    
+
+/*Direita*/
+
+.direitarodape{
+    width: 333px;
+    height: 200px;
+    margin-top: 10px;
+}
+
+.titulonewsletter p {
+    padding-right: 5px;
+    font-size: 11px;
+    margin-bottom: 7px;
+}
+#newsletter{
+    font-size: 15px;
+    margin-left: 10px;
+}
+.titulonewsletter img {
+    padding-right: 5px;
+}
+.newsletterinput {
+    border-radius: 5px;
+background-color: #F5F0F5;
+width: 95%;
+margin-left: 5px;
+}
+
+#newsletterinput{
+    width: 90%;
+    border: none;
+    outline: none;
+    background: none;
+    padding-left: 5px;
+}
+
+#botao_cadastrar{
+    margin-right: 2px;
+    border-radius: 5px;
+    cursor: pointer;
+    height: 85%;
+    width: 25%;
+    background-color: #0065C2;
+    font-size: 16px;
+    color: #F5F0F5;
+    font-family: "Open Sans";
+    border: none;
+    margin-top: 3px;
+    margin-bottom: 3px;
+}
+.sac{
+    margin-left: 5px;
+}
+
+.sac-redes{
+    height: 90px;
+    width: 333px;
+}
+
+.sac1 {
+    padding-right: 5px;
+    font-size: 12px;
+    
+}
+.sacgg{
+    font-size: 14px;
+}
+
+.fsc p {
+    padding-right: 5px;
+    padding-left: 5px;
+}
+
+.redes{
+    text-transform: uppercase;
+    font-size: 10px;
+}
+
+.redessociais{
+    padding-right: 5px;
+    padding-top: 5px;
+    
+}
+
+.redessociais a img{
+width: 35px;
+}
+.rodape2{
+    display: flex;
+}
+}       
+
+
+
+
+
+/* -----------------------------------1120px----------------------*/
+
+@media screen and (max-width: 1120px){
+.grid{
+    width: 800px;
+}
+.bannerbg{
+    width: 800px;
+    height: 300px;
+   background-size: contain;
+}
+.banner-txt1{
+    font-size: 20px;
+}
+.banner-txt2{
+    font-size: 20px;
+}
+
+.confira{
+    height: 80px;
+    width: 200px;
+}
+.alin2{
+    margin-left: 650px;
+}
+.alin3{
+    margin-left: 700px;
+}
+#red{
+    height: 180px;
+    width: 360px;
+    border-radius: 10px;
+}
+.carrossel2{
+    width: 520px;
+     
+}
+/*rodape*/
+/*Esquerda*/
+
+.todas_as_linhas{width: 130px;}
+    
+.esquerdarodape-txt{
+  width: 310px;
+}
+
+.rodape-titulo{
+    font-size: 18px;
+}
+
+
+
+/*Direita*/
+
+.direitarodape{
+width: 800px;
+height: 200px;
+margin-top: 10px;
+}
+
+.titulonewsletter p {
+padding-right: 5px;
+font-size: 15px;
+margin-bottom: 7px;
+}
+#newsletter{
+font-size: 25px;
+margin-left: 10px;
+}
+.titulonewsletter img {
+padding-right: 5px;
+}
+.newsletterinput {
+border-radius: 5px;
+background-color: #F5F0F5;
+width: 63%;
+margin-left: 5px;
+
+}
+
+#newsletterinput{
+width: 90%;
+border: none;
+outline: none;
+background: none;
+padding-left: 5px;
+}
+
+#botao_cadastrar{
+margin-right: 2px;
+border-radius: 5px;
+cursor: pointer;
+height: 85%;
+width: 25%;
+background-color: #0065C2;
+font-size: 16px;
+color: #F5F0F5;
+font-family: "Open Sans";
+border: none;
+margin-top: 3px;
+margin-bottom: 3px;
+}
+.sac{
+margin-left: 5px;
+}
+
+.sac-redes{
+height: 90px;
+width: 600px;
+margin-top: 20px;
+}
+
+.sac1 {
+padding-right: 5px;
+font-size: 17px;
+
+}
+.sacgg{
+font-size: 19px;
+}
+
+.fsc p {
+padding-right: 5px;
+padding-left: 5px;
+}
+
+.redes{
+text-transform: uppercase;
+font-size: 17px;
+}
+
+.redessociais{
+padding-right: 5px;
+padding-top: 5px;
+display: flex;
+justify-content: flex-start;
+}
+
+.redessociais a img{
+width: 55px;
+padding-left: 10px;
+}
+
+.rodape2{
+    display: flex;
+    flex-direction: column;
+}
+
+.colunadivisora{
+    display:none;
+}
+.rodape2{
+    display: flex;
+}
+.sel{
+    margin-top: 20px;
+    margin-left: 30px;
+
+}
+
+.sel-txt{
+    color: #121212;
+    text-shadow: none;
+    text-transform: uppercase;
+    font-weight: bolder;
+    font-size: 16px;
+}
+
+}
+
+
+
+
+   
+    
