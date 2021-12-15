@@ -344,6 +344,42 @@ header{
     background-color: #F5F0F5;
 }
 
+.bannerJogos{
+    width: 250px;
+    height: 330px;
+    background: linear-gradient(90deg, #0275C8 0%, #11A2E1 55.91%, #1CC2F3 94.94%);
+    margin-right: 10px;
+    margin-bottom: 20px;
+}
+
+.bannerJogos p{
+    text-shadow: none;
+    font-weight: 300;
+    font-size: small;
+    padding-left: 15px;
+}
+
+.imgJogos{
+    width: 250px;
+}
+
+.descricaoJogos h3{
+    text-transform: uppercase;
+    text-shadow: none;
+    padding-left: 15px;
+    padding-bottom: 5px;
+    letter-spacing: 0.14em;
+    
+}
+
+.descricaoJogos p{
+    text-transform: uppercase;
+    text-shadow: none;
+    padding-left: 15px;
+    font-weight: 800;
+    font-size: x-large;
+    letter-spacing: 0.19em;
+}
 
 .titulo2{
     height: 95px;
@@ -372,16 +408,16 @@ header{
     text-decoration: none;
 }
 
-.linha1{
-    margin-top: 15px;
-}
-
-.carrossel2{
+.secJogos{
     display: flex;
-    height: 332;
-    width: 1036px;
-    overflow: hidden;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    height: 332px;
+    height: 680px;
+    /* overflow: hidden; */
     margin-top: 10px;
+    padding: 0px 50px;
 }
 .imagem3{
     padding-left: 5px;

@@ -1,0 +1,56 @@
+{
+  "users": [
+    {
+      "email": "raissa@email.com",
+      "password": "$2a$10$G/BGLuFeUzGohpCz.cWFG.8wK9jG8VZmGJ7dZj.LuFDc6UJ4GPE0u",
+      "id": 1
+    },
+    {
+      "email": "teste@email.com",
+      "password": "$2a$10$onAU1P4tXPbDFh5X9NBWBOdQxdwzXL.Rb6orrKMtUAYRV2XpRk3GO",
+      "id": 2 
+    }
+  ],
+  "promocoes": [
+    {
+      "id": 1,
+      "titulo": "Battlefield 2042",
+      "descricao": "R$ 249,00"
+    },
+    {
+      "titulo": "Jogo 2",
+      "descricao": "R$ 10,00",
+      "id": 2
+    },
+    {
+      "titulo": "Jogo 3",
+      "descricao": "R$ 79,80",
+      "id": 3
+    },
+    {
+      "titulo": "Jogo 4",
+      "descricao": "R$ 43,00",
+      "id": 4
+    },
+    {
+      "titulo": "Jogo 5",
+      "descricao": "R$ 387,00",
+      "id": 5
+    },
+    {
+      "titulo": "Jogo 6",
+      "descricao": "R$ 26,00",
+      "id": 6
+    },
+    {
+      "titulo": "Jogo 7",
+      "descricao": "R$ 75,00",
+      "id": 7
+    },
+    {
+      "titulo": "Jogo 8",
+      "descricao": "R$ 279,00",
+      "id": 8
+    }
+  ]
+}

@@ -1,11 +1,12 @@
 <div class="background">
     <div class="bannerbg grid">
         <div class="banner-txt">
-            <div class="banner-txt1 alin2">
+            <div  class="banner-txt1 alin2">
                 <p>Os melhores jogos</p>
-                <p>do mercado</p>
-                <p>você encontra aqui!</p>
-            </div>
+                <p>do mercado</p>                 
+                <!-- <p>{{ promocao.id }}</p> -->
+            </div>         
+            
             <a href=""><img src="../../assets/img/confira.png" class="alin3 confira" alt="botão de confira"></a>
             <div class="banner-txt2 alin2">
                 <p>Novidades com até</p>
@@ -162,35 +163,41 @@
                 </a>
             </div>
         </div>
-        <div class=" produtos container">
+        <div class="container">
             <!-- produtos da seção jogos-->
-            <div class="produtosbanners">
-                <div class="linha1 sec">
-                    <div class="setaesquerda" onclick=passadorESQ3()></div>
-                    <div class="carrossel2">
-                        <div class="produtos1 sbc" id="img3">
-                            <a routerLink="pagina-produto"><img class="imagem3"
+        
+                    <div class="secJogos">
+                        
+                            <div *ngFor="let promocao of promocoes" class="bannerJogos">
+                                <img src="../../assets/img/BF-jogo.png" class="imgJogos" alt="">
+                                <div  class="descricaoJogos">
+                                    <h3>{{ promocao.titulo }}</h3>
+                                    <p>{{ promocao.descricao }}</p>
+                                </div>
+                                <p>Em até 10x no cartão</p>
+                            </div>
+                           
+                            
+                            <!-- <a routerLink="pagina-produto"><img class="imagem3"
                                     src="../../assets/img/section 4/soldado.png" alt="produto"></a>
                             <a routerLink="pagina-produto"><img class="imagem3"
                                     src="../../assets/img/section 4/soldado.png" alt="produto"></a>
                             <a routerLink="pagina-produto"><img class="imagem3"
                                     src="../../assets/img/section 4/soldado.png" alt="produto"></a>
                             <a routerLink="pagina-produto"><img class="imagem3"
+                                    src="../../assets/img/section 4/soldado.png" alt="produto"></a> -->
+                            <!-- <a routerLink="pagina-produto"><img class="imagem3"
                                     src="../../assets/img/section 4/soldado.png" alt="produto"></a>
                             <a routerLink="pagina-produto"><img class="imagem3"
                                     src="../../assets/img/section 4/soldado.png" alt="produto"></a>
                             <a routerLink="pagina-produto"><img class="imagem3"
                                     src="../../assets/img/section 4/soldado.png" alt="produto"></a>
                             <a routerLink="pagina-produto"><img class="imagem3"
-                                    src="../../assets/img/section 4/soldado.png" alt="produto"></a>
-                            <a routerLink="pagina-produto"><img class="imagem3"
-                                    src="../../assets/img/section 4/soldado.png" alt="produto"></a>
+                                    src="../../assets/img/section 4/soldado.png" alt="produto"></a> -->
 
-                        </div>
                     </div>
-                    <div class="setadireita" onclick=passadorDIR3()></div>
-                </div>
-                <div class="linha1 sec">
+                
+                <!-- <div class="linha1 sec">
                     <div class="setaesquerda" onclick=passadorESQ4()></div>
                     <div class="carrossel2">
                         <div class="produtos1 sbc" id="img4">
@@ -212,10 +219,10 @@
                                     src="../../assets/img/section 4/soldado.png" alt="produto"></a>
 
                         </div>
-                    </div>
-                    <div class="setadireita" onclick=passadorDIR4()></div>
-                </div>
-            </div>
+                    </div> -->
+                    <!-- <div class="setadireita" onclick=passadorDIR4()></div>
+                </div> -->
+            
         </div>
         <div class="ainda df ccc">
             <!-- ainda em dúvida?-->

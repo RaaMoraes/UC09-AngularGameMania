@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { Promocoes } from '../models/promocoes';
+import { PromocoesService } from '../services/promocoes.service';
 
 @Component({
   selector: 'app-home',
@@ -7,9 +9,19 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HomeComponent implements OnInit {
 
-  constructor() { }
+  promocoes = [] as Promocoes[];
+
+  constructor(private promocoesService: PromocoesService) { }
 
   ngOnInit(): void {
+    this.carregarPromocoes();
+  }
+
+  carregarPromocoes() {
+    this.promocoesService.getPromocoes().subscribe((promocoesRecebidas: Promocoes[]) =>{
+      this.promocoes = promocoesRecebidas;
+      console.log(this.promocoes);
+    })
   }
 
 }
