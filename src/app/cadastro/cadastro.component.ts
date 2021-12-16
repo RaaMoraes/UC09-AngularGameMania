@@ -22,6 +22,17 @@ export class CadastroComponent implements OnInit {
   onSubmit() {
     //console.log(this.cadastroModel)
 
+    const blackList: string[] = [" ", "select ", "from ", "drop ", "or ", "having ", "group ", "by ", "insert ", "exec ", "\"", "\'", "--", "#", "*", ";" ]
+    //como é email irei colocar o espaço como caractere proibido 
+
+    blackList.forEach(palavra => {
+      if(this.cadastroModel.email.toLowerCase().includes(palavra)){
+        this.mensagem = "Dados inválidos: " + palavra
+        return;
+        //não vai fazer a requisição abaixo se encontrar uma das palavras da black list
+      }
+    });
+
     this.cadastroService.cadastro(this.cadastroModel).subscribe((response) => {
       this.mensagem = "Login realizado com sucesso!";
       this.router.navigateByUrl("/")
